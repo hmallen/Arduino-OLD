@@ -1,0 +1,35 @@
+5V --> Mega
+GND --> Mega
+
+A0 --> Photoresistor
+A1 --> RPi
+A2 --> Mega (SS)
+A3 --> Mega (SS)
+
+2 --> LED Relay
+3 --> Trip switch
+4 --> Calib
+5
+6
+
+
+2146738002 (PK)
+2143155885 (GK)
+2147070200 (TK)
+2145635266 (HMA)
+2146738003 (MK)
+
+AT COMMANDs (SIM):
+
+AT+CMGR=1,0 --> Read SMS from index 1
+
+AT+CMGL="REC UNREAD" --> Read unread messages and change status to read
+
+AT+CMGD=0,2 --> Delete all read messages
+
+// Numbers permitted for SMS menu use
+const char smsTargetNum0[13] = "+12145635266";  // HA
+const char smsTargetNum1[13] = "+12146738002";  // PK
+const char smsTargetNum2[13] = "+12143155885";  // GK
+const char smsTargetNum3[13] = "+12147070200";  // TK
+const char smsTargetNum4[13] = "+12146738003";  // MK

@@ -1,0 +1,16 @@
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+
+' XBeeRX_PbLed.bs2
+' Received state of pushbutton, displays state in Debug Terminal and turns on an
+' LED connected to P13 if the button is pressed.
+
+RX         PIN   15                          ' XBee DOUT pin
+PbState    VAR   Bit                         ' Variable space for pushbutton state
+
+DO
+  SERIN RX, 84, [BIN PbState]                ' Receives pushbutton state
+
+  DEBUG HOME, ? PbState                      ' Displays state in Debug Terminal
+  IF PbState = 1 THEN HIGH 13 ELSE LOW 13    ' LED on if pressed/off if not pressed
+LOOP                                         ' Loop forever

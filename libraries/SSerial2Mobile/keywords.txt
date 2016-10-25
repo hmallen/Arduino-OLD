@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map For Ultrasound
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SSerial2Mobile	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+ println KEYWORD2
+ off KEYWORD2
+ on KEYWORD2
+ reset KEYWORD2
+ sendTxt KEYWORD2
+ sendEmail KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+

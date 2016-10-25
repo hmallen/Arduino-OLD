@@ -1,0 +1,12 @@
+Gyroscope - 4986
+Compass - 5052
+Altimeter - 12564
+Accelerometer - 5290
+SD - 14822
+
+Total: 44714
+Maximum: 32256
+
+(Total w/o compass: 39662)
+
+LED to indicate SD card function

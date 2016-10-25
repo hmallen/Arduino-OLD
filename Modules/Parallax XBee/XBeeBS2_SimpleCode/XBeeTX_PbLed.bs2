@@ -1,0 +1,12 @@
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+
+' XBeeTX_PbLed.bs2
+' Sends state of an active-high pushbutton connected to P13
+
+TX    PIN   14                             ' XBee DIN pin
+
+DO
+  SEROUT TX, 84, [BIN IN13, CR]            ' Sends state of pushbutton
+  PAUSE 250                                ' Short pause
+LOOP                                       ' Loop forever
